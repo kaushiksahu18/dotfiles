@@ -4,5 +4,5 @@
 - emoji-copy
 - clipboard-indicator
 - color-picker
-- quick-settings-tweaks
+- [QSTweaks]
 - Vitals

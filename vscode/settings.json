@@ -67,5 +67,5 @@
     "editor.defaultFormatter": "jock.svg"
   },
   "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontFamily": "MesloLGLDZ Nerd Font"
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font"
 }
