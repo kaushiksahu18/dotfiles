@@ -16,3 +16,6 @@
 - bat : batter cat
 - zoxide : batter way to "cd"
 - neofetch : terminal based system info fetching utility
+- btop : better top even better htop
+- tldr : better man
+- eza : better ls
