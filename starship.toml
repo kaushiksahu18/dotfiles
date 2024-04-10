@@ -1,81 +1,65 @@
-"$schema" = 'https://starship.rs/config-schema.json'
-
 format = """
-[░▒▓](color_orange)\
-[ 󰣇 ](bg:color_orange)\
+$cmd_duration\
+$shell\
 $username\
-[](bg:color_yellow fg:color_orange)\
+$sudo\
+$character\
+"""
+
+right_format = """
 $directory\
-[](fg:color_yellow bg:color_green)\
 $git_branch\
 $git_status\
-[](fg:color_green bg:color_blue)\
 $c\
-$rust\
-$golang\
 $nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
 $python\
-[](fg:color_blue bg:color_bg3)\
-$docker_context\
-$conda\
-[](fg:color_bg3 bg:color_bg1)\
+$memory_usage\
+$aws\
+$battery\
 $time\
-[ ](fg:color_bg1)\
-$line_break$character"""
+"""
 
-palette = 'catppuccin_mocha'
+add_newline = true
 
-[palettes.catppuccin_mocha]
-color_purple = "#cba6f7"
-color_red = "#f38ba8"
-color_orange = "#fab387"
-color_yellow = "#f9e2af"
-color_green = "#a6e3a1"
-color_blue = "#89b4fa"
-color_fg0 = "#576289"
-color_bg3 = "#585b70"
-color_bg1 = "#313244"
-
-[os]
+[memory_usage]
+format = '$symbol [${ram_pct}]($style)'
 disabled = false
-style = "bg:color_orange fg:color_fg0"
+threshold = -1
+symbol = '󰍛'
+style = 'bold dimmed green'
 
-[os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰣇"
-Artix = "󰣇"
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
+[shell]
+fish_indicator = '󰈺'
+zsh_indicator = '󰬡'
+bash_indicator = ''
+style = '#89dceb bold'
+disabled = false
+
+[character]
+format = "$symbol "
+success_symbol = "[◉](bold italic bright-yellow)"
+error_symbol = "[⊘](italic purple)"
+
+[sudo]
+format = "[$symbol]($style)"
+style = "italic #cba6f7"
+symbol = "󱃱 "
+disabled = false
+
 
 [username]
+style_user = '#f38ba8'
+style_root = '#f38ba8 bold'
+format = '[$user]($style) '
+disabled = false
 show_always = true
-style_user = "bg:color_orange fg:color_fg0"
-style_root = "bg:color_orange fg:color_fg0"
-format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_fg0 bg:color_yellow"
-format = "[ $path ]($style)"
+home_symbol = "󰜥 "
 truncation_length = 3
-truncation_symbol = "…/"
+truncation_symbol = " "
+style = "italic blue"
+format = ' [$path]($style)'
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -86,81 +70,55 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_green"
-format = '[[ $symbol $branch ](fg:color_fg0 bg:color_green)]($style)'
+format = '[ $symbol $branch ](fg:#f38ba8)'
 
 [git_status]
-style = "bg:color_green"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_green)]($style)'
+format = '[($all_status$ahead_behind )](fg:#f38ba8)'
 
-[nodejs]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
-[c]
-symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[php]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[java]
-symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[haskell]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[python]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[docker_context]
-symbol = ""
-style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:color_green bg:color_bg3)]($style)'
-
-[conda]
-style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:color_green bg:color_bg3)]($style)'
+[cmd_duration]
+min_time = 500
+format = "[$duration ](italic bright-yellow)"
 
 [time]
 disabled = false
+format = "[ $time]($style)"
 time_format = "%R"
-style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+utc_time_offset = "local"
+style = "dimmed white"
 
-[line_break]
-disabled = false
+[battery]
+format = "[ $percentage $symbol]($style)"
+full_symbol = "[󱈑](italic green)"
+charging_symbol = "[󰂄](italic green)"
+discharging_symbol = "[󰂌](italic)"
+unknown_symbol = "[󰂑](italic)"
+empty_symbol = "[󰂎](italic red)"
 
-[character]
-disabled = false
-success_symbol = '[](bold fg:color_green)'
-error_symbol = '[](bold fg:color_red)'
-vimcmd_symbol = '[](bold fg:color_green)'
-vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
-vimcmd_replace_symbol = '[](bold fg:color_purple)'
-vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+[[battery.display]]
+threshold = 40
+style = "dimmed yellow"
+
+[[battery.display]]
+threshold = 70
+style = "dimmed white"
+
+[nodejs]
+format = "[ ($version) ](italic bright-green)"
+detect_files = ["package-lock.json", "yarn.lock"]
+version_format = "${major}.${minor}"
+
+[python]
+format = " py [${symbol}${version}]($style)"
+symbol = "[](italic bright-blue)"
+version_format = "${major}.${minor}"
+style = "italic bright-yellow"
+
+[aws]
+format = " aws [$symbol $profile $region]($style)"
+style = "italic blue"
+symbol = " "
+
+[c]
+symbol = " "
+format = " c [$symbol($version(-$name))]($style)"
