@@ -1,8 +1,10 @@
 # Gnome Software I  use
 
 ##  Applications
+- Pinta : Basic Photo Editor
+- Cheese : Normal Camra app
 - fish : shell
-- neovim : terminal based text editor
+- nerdfetch : terminal based text editor
 - gnome-tweaks : s/w for custamizing gnome apearence
 - vscode : full fledg text editor
 - brave - browser
@@ -15,7 +17,6 @@
 - starship : shell prompt
 - bat : batter cat
 - zoxide : batter way to "cd"
-- neofetch : terminal based system info fetching utility
 - btop : better top even better htop
 - tldr : better man
 - eza : better ls
