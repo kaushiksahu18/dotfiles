@@ -4,7 +4,8 @@
 - Pinta : Basic Photo Editor
 - Cheese : Normal Camra app
 - fish : shell
-- nerdfetch : terminal based text editor
+- neofetch : system info fetching and beautifuly show 
+- neovim : terminal based text editor
 - gnome-tweaks : s/w for custamizing gnome apearence
 - vscode : full fledg text editor
 - brave - browser
@@ -12,6 +13,7 @@
 - obsidian - note taking s/w
 - warp - terminal emulator
 - extension-manager - gnome-extension-manager
+- nerdfetch : system info fetching and beautifuly show
 
 ## Terminal Based Utilities
 - starship : shell prompt
