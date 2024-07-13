@@ -3,7 +3,7 @@
 ##  Applications
 - Pinta : Basic Photo Editor
 - Cheese : Normal Camra app
-- fish : shell
+- zsh : shell
 - neofetch : system info fetching and beautifuly show 
 - neovim : terminal based text editor
 - gnome-tweaks : s/w for custamizing gnome apearence

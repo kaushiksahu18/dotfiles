@@ -1,0 +1,12 @@
+---
+"notebookview:focus_terminal_input": none
+"pane_group:navigate_up": ctrl-shift-K
+"pane_group:navigate_down": ctrl-shift-J
+"pane_group:navigate_right": ctrl-shift-L
+"input:clear_screen": ctrl-k
+"terminal:focus_input": none
+"ai_assistant_panel:focus_terminal_input": none
+"editor_view:move_to_line_end": ctrl-e
+"pane_group:navigate_left": ctrl-shift-H
+"editor_view:move_to_line_start": ctrl-a
+"editor_view:select_all": ctrl-shift-A
