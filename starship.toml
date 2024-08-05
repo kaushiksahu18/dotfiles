@@ -19,6 +19,7 @@ $time\
 """
 
 add_newline = true
+command_timeout = 10000
 
 [memory_usage]
 format = '$symbol [${ram_pct}]($style)'

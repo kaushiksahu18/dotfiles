@@ -127,3 +127,4 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=$GREEN
 ZSH_HIGHLIGHT_STYLES[backtick]=fg=$RED
 ZSH_HIGHLIGHT_STYLES[backtick-quoted-argument]=fg=$GREEN
 export PATH=$HOME/.local/bin:$PATH
+export BROWSER=brave

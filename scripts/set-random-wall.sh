@@ -1,23 +1,24 @@
 #!/bin/bash
+# Directory containing wallpapers
 
-# Define directory containing wallpapers
-directory=~/dotfiles/walls/
-monitor=$(hyprctl monitors | grep Monitor | awk '{print $2}')
+WALLPAPER_DIR="$HOME/dotfiles/walls"
 
 # Set default wallpaper category
-walls="nature"
+walls="mix" # OR gils
 # Override default if argument is provided
 if [ -n "$1" ]; then
     walls="$1"
 fi
 
-# Check if the wallpaper directory exists
-if [ -d "$directory" ]; then
-    # Select a random wallpaper from the specified category
-    random_background=$(find "$directory/$walls" -type f | shuf -n 1)
+# Select a random wallpaper
+WALLPAPER=$(find "$WALLPAPER_DIR/$walls" -type f | shuf -n 1)
 
-    # Apply the selected wallpaper
-    hyprctl hyprpaper unload all
-    hyprctl hyprpaper preload "$random_background"
-    hyprctl hyprpaper wallpaper "$monitor, $random_background"
-fi
+# Apply the wallpaper
+qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "
+var allDesktops = desktops();
+for (i=0;i<allDesktops.length;i++) {
+    d = allDesktops[i];
+    d.wallpaperPlugin = 'org.kde.image';
+    d.currentConfigGroup = Array('Wallpaper', 'org.kde.image', 'General');
+    d.writeConfig('Image', 'file://$WALLPAPER')
+}"
