@@ -1,143 +1,149 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "extensions.autoUpdate": false,
-    "settingsSync.ignoredSettings": [],
-    "window.menuBarVisibility": "toggle",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "editor.cursorBlinking": "expand",
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.iconTheme": "material-icon-theme",
+  "extensions.autoUpdate": false,
+  "settingsSync.ignoredSettings": [],
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.size": "fit",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.external.linuxExec": "warp",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": true,
+    "rust": false,
+    "cpp": false
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.linkedEditing": true,
+  "window.zoomLevel": 1,
+  "editor.wordWrap": "on",
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "editor.guides.bracketPairs": true,
+  "editor.mouseWheelZoom": true,
+  "errorLens.gutterIconsEnabled": false,
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarMessageEnabled": true,
+  "errorLens.statusBarMessageType": "closestSeverity",
+  "errorLens.followCursor": "closestProblem",
+  "errorLens.scrollbarHackEnabled": true,
+  "errorLens.fontStyleItalic": true,
+  "errorLens.messageBackgroundMode": "message",
+  "workbench.colorCustomizations": {
+    "editorInfo.foreground": "#0080ff6a"
+  },
+  "svg.preview.mode": "svg",
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+  "errorLens.excludeBySource": ["C/C++(520)"],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
     },
-    "[css]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "zsh": {
+      "path": "zsh"
     },
-    "editor.minimap.size": "fit",
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "fish": {
+      "path": "fish"
     },
-    "terminal.external.linuxExec": "warp",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
     },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
     },
-    "extensions.ignoreRecommendations": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "github.copilot.enable": {
-      "*": false,
-      "plaintext": true,
-      "markdown": true,
-      "rust": false,
-      "cpp": false
-    },
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false,
-    "editor.linkedEditing": true,
-    "window.zoomLevel": 1,
-    "editor.wordWrap": "on",
-    "workbench.editor.labelFormat": "short",
-    "explorer.compactFolders": false,
-    "editor.guides.bracketPairs": true,
-    "editor.mouseWheelZoom": true,
-    "errorLens.gutterIconsEnabled": false,
-    "errorLens.statusBarColorsEnabled": true,
-    "errorLens.statusBarMessageEnabled": true,
-    "errorLens.statusBarMessageType": "closestSeverity",
-    "errorLens.followCursor": "closestProblem",
-    "errorLens.scrollbarHackEnabled": true,
-    "errorLens.fontStyleItalic": true,
-    "errorLens.messageBackgroundMode": "message",
-    "workbench.colorCustomizations": {
-      "editorInfo.foreground": "#0080ff6a"
-    },
-    "svg.preview.mode": "svg",
-    "[svg]": {
-      "editor.defaultFormatter": "jock.svg"
-    },
-    "editor.cursorSmoothCaretAnimation": "on",
-    "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
-    "[cpp]": {
-      "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "[rust]": {
-      "editor.defaultFormatter": "rust-lang.rust-analyzer",
-      "editor.inlayHints.enabled": "offUnlessPressed"
-    },
-    "errorLens.excludeBySource": ["C/C++(520)"],
-    "liveServer.settings.donotShowInfoMsg": true,
-    "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "bash",
-        "icon": "terminal-bash"
-      },
-      "zsh": {
-        "path": "zsh"
-      },
-      "fish": {
-        "path": "fish"
-      },
-      "tmux": {
-        "path": "tmux",
-        "icon": "terminal-tmux"
-      },
-      "pwsh": {
-        "path": "pwsh",
-        "icon": "terminal-powershell"
-      },
-      "nu": {
-        "path": "/bin/nu"
+    "nu": {
+      "path": "/bin/nu"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "supermaven.enable": {
+    "rust": false,
+    "*": true,
+    "cpp": false,
+    "java": false
+  },
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "[Astro Kanagawa Dark]": {
+      "comments": {
+        "foreground": "#FF9E3B"
       }
     },
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "github.copilot.editor.enableAutoCompletions": true,
-    "workbench.activityBar.location": "top",
-    "workbench.editor.editorActionsLocation": "hidden",
-    "supermaven.enable": {
-      "rust": false,
-      "*": true,
-      "cpp": false
-    },
-    "editor.minimap.enabled": false,
-    "editor.tokenColorCustomizations": {
-      "[Astro Kanagawa Dark]": {
-        "comments": {
-          "foreground": "#FF9E3B"
-        }
-      },
-      "[Catppuccin Mocha]": {
-        "comments": {
-          "foreground": "#a6adc8"
-        }
+    "[Catppuccin Mocha]": {
+      "comments": {
+        "foreground": "#a6adc8"
       }
-    },
-    // we try to make semantic highlighting look good
-    "editor.semanticHighlighting.enabled": true,
-    // prevent VSCode from modifying the terminal colors
-    "terminal.integrated.minimumContrastRatio": 1,
-    // make the window's titlebar use the workbench colors
-    "window.titleBarStyle": "custom",
-  
-    // applicable if you use Go, this is an opt-in flag!
-    "gopls": {
-      "ui.semanticTokens": true
-    },
-    "supermaven.otherWarning": false,
-    "[go]": {
-      "editor.defaultFormatter": "golang.go"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "window.customTitleBarVisibility": "auto",
-    "workbench.colorTheme": "Astro Kanagawa Dark",
-    "files.autoSave": "afterDelay"
-  }
+    }
+  },
+  // we try to make semantic highlighting look good
+  "editor.semanticHighlighting.enabled": true,
+  // "editor.semanticHighlighting.enabled": false,
+  // prevent VSCode from modifying the terminal colors
+  "terminal.integrated.minimumContrastRatio": 1,
+  // make the window's titlebar use the workbench colors
+  "window.titleBarStyle": "custom",
+
+  // applicable if you use Go, this is an opt-in flag!
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "supermaven.otherWarning": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "window.customTitleBarVisibility": "auto",
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "zig.initialSetupDone": true
+}
