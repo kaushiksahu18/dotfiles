@@ -37,7 +37,7 @@
     "markdown": true,
     "rust": false,
     "cpp": false
-  },
+  }, // => ===
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -65,7 +65,7 @@
     "editor.defaultFormatter": "jock.svg"
   },
   "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "terminal.integrated.fontFamily": "RecMonoCasual Nerd Font Mono",
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -140,10 +140,18 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "window.customTitleBarVisibility": "auto",
-  "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.colorTheme": "One Dark Pro",
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
-  "zig.initialSetupDone": true
+  "zig.initialSetupDone": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "zig.path": "zig",
+  "zig.zls.path": "zls",
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

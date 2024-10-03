@@ -1,4 +1,43 @@
 # My Dotfiles
 
-## Curent Setup Preview
-![](./main.png)
+- [x] OS: EndeavourOS
+- [x] DE: GNOME
+- [x] WM: Mutter
+- [x] Shell: zsh
+- [x] Terminal: kitty
+- [x] Editor: VSCode, Zed, Neovim
+- [x] Browser: Brave, Zen
+- [x] Languages: C/C++, Java, Python, JS, Rust, Go
+- [x] **Application**:
+  - [x] Extensions Manager
+  - [x] GDM Settings
+  - [x] Cheese.
+  - [x] OBS
+  - [x] Docker
+  - [x] Postman
+  - [x] Wireshark
+  - [x] Insomnia
+  - [x] LibreOffice
+  - [x] mpv
+  - [x] shotcut
+  - [x] Sticky Notes
+  - [x] flameshot
+- [x] **CLI/TUI**
+  - [x] Btop
+  - [x] neofetch
+  - [x] bat
+  - [x] exa
+  - [x] fzf
+  - [x] tldr
+  - [x] zoxide
+  - [x] starship
+  - [x] pnpm
+  - [x] bun
+  - [x] node
+  - [x] rustup
+  - [x] lazygit
+  - [x] tmux
+  - [x] httpie
+  - [x] procs
+  - [x] nerdfetch
+  - [x] thefuck
