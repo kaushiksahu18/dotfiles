@@ -40,4 +40,7 @@
   - [x] httpie
   - [x] procs
   - [x] nerdfetch
+  - [x] nmap
+  - [x] speedtest-cli
+  - [x] yazi
   - [x] thefuck
