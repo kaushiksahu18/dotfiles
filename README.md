@@ -1,5 +1,23 @@
 # My Dotfiles
 
+## Install The Packages
+
+```sh
+yay -S brave-bin extension-manager gdm-settings postman-bin wireshark-qt insomnia sticky-notes bun nerdfetch visual-studio-code-bin zen-browser-avx2-bin banana-cursor-bin
+```
+
+### Install
+
+```sh
+sudo pacman -S kitty zsh starship cheese obs-studio obsidian libreoffice-fresh shotcut flameshot btop neofetch bat eza fzf tldr zoxide tmux nmap mpv ducker pnpm nodejs rustup lazygit httpie procs speedtest-cli thefuck yazi neovim ttf-fira-code zed rate-mirrors pinta dconf-editor
+```
+
+### Update the Mirror list
+
+```sh
+rate-mirrors --protocol https --allow-root --entry-country IN endeavouros | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist
+```
+
 - [x] OS: EndeavourOS
 - [x] DE: GNOME
 - [x] WM: Mutter
@@ -26,7 +44,7 @@
   - [x] Btop
   - [x] neofetch
   - [x] bat
-  - [x] exa
+  - [x] eza
   - [x] fzf
   - [x] tldr
   - [x] zoxide

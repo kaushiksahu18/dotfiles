@@ -1,4 +1,5 @@
 # Extension I Use in my Gnome setup
+
 - blur-my-shell
 - dash-to-dock
 - emoji-copy

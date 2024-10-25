@@ -36,6 +36,9 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 
 # History
 HISTSIZE=5000
@@ -58,7 +61,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='eza'
+alias ls='eza --classify=always --color=always --icons=always'
 alias cat='bat'
 alias nman='tldr'
 alias cod='code'
@@ -74,6 +77,8 @@ alias mv='mv -ifv'
 alias rm='rm -Rifv'
 
 alias sizeof='du -sh'
+
+alias toggleport="$HOME/dotfiles/scripts/toggleport.sh"
 
 alias ghce='gh copilot explain'
 alias ghcs='gh copilot suggest'
