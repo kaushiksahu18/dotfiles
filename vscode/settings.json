@@ -6,13 +6,15 @@
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "editor.cursorBlinking": "expand",
+  "editor.minimap.size": "fit",
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.minimap.size": "fit",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -23,8 +25,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "extensions.ignoreRecommendations": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -32,20 +32,20 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": true,
     "markdown": true,
     "rust": false,
-    "cpp": false
-  }, // => ===
+    "cpp": false,
+    "go": false
+  },
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
   "editor.linkedEditing": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.9,
   "editor.wordWrap": "on",
-  "workbench.editor.labelFormat": "short",
   "explorer.compactFolders": false,
   "editor.guides.bracketPairs": true,
   "editor.mouseWheelZoom": true,
@@ -100,13 +100,12 @@
   },
   "terminal.integrated.defaultProfile.linux": "zsh",
   "github.copilot.editor.enableAutoCompletions": true,
-  "workbench.activityBar.location": "top",
-  "workbench.editor.editorActionsLocation": "hidden",
   "supermaven.enable": {
     "rust": false,
     "*": true,
     "cpp": false,
-    "java": false
+    "java": false,
+    "go": false
   },
   "editor.minimap.enabled": false,
   "editor.tokenColorCustomizations": {
@@ -121,15 +120,9 @@
       }
     }
   },
-  // we try to make semantic highlighting look good
   "editor.semanticHighlighting.enabled": true,
-  // "editor.semanticHighlighting.enabled": false,
-  // prevent VSCode from modifying the terminal colors
   "terminal.integrated.minimumContrastRatio": 1,
-  // make the window's titlebar use the workbench colors
   "window.titleBarStyle": "custom",
-
-  // applicable if you use Go, this is an opt-in flag!
   "gopls": {
     "ui.semanticTokens": true
   },
@@ -141,17 +134,9 @@
   "explorer.confirmDelete": false,
   "window.customTitleBarVisibility": "auto",
   "workbench.colorTheme": "One Dark Pro",
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "zig.initialSetupDone": true,
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "zig.path": "zig",
-  "zig.zls.path": "zls",
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "never"
 }
