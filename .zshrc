@@ -17,7 +17,10 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 zinit ice depth=1
-zinit light jeffreytse/zsh-vi-mode
+# zinit light jeffreytse/zsh-vi-mode
+# Ensure zsh-vi-mode loads last, with bindkey commands applied after it loads
+zinit atload"bindkey '^[[A' history-beginning-search-backward; bindkey '^[[B' history-beginning-search-forward" \
+  for jeffreytse/zsh-vi-mode
 zinit wait lucid for MichaelAquilina/zsh-you-should-use
 
 # Add in snippets
@@ -36,9 +39,6 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
-
 
 # History
 HISTSIZE=5000
@@ -106,3 +106,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
