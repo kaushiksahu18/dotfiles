@@ -3,7 +3,7 @@
 ## Install The Packages
 
 ```sh
-yay -S brave-bin extension-manager gdm-settings postman-bin wireshark-qt insomnia sticky-notes bun nerdfetch visual-studio-code-bin zen-browser-avx2-bin banana-cursor-bin bun-bin
+yay -S brave-bin extension-manager gdm-settings postman-bin wireshark-qt sticky-notes nerdfetch visual-studio-code-bin zen-browser-avx2-bin banana-cursor-bin bun-bin
 ```
 
 ### Install
