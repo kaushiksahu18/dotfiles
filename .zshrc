@@ -18,9 +18,6 @@ zinit light Aloxaf/fzf-tab
 
 zinit ice depth=1
 # zinit light jeffreytse/zsh-vi-mode
-# Ensure zsh-vi-mode loads last, with bindkey commands applied after it loads
-zinit atload"bindkey '^[[A' history-beginning-search-backward; bindkey '^[[B' history-beginning-search-forward" \
-  for jeffreytse/zsh-vi-mode
 zinit wait lucid for MichaelAquilina/zsh-you-should-use
 
 # Add in snippets
@@ -39,6 +36,15 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
+bindkey '^H' backward-kill-word
+bindkey "^[[A" history-beginning-search-backward 
+bindkey "^[[B" history-beginning-search-forward  
+bindkey '^A' beginning-of-line        # Move to the beginning of the line
+bindkey '^E' end-of-line              # Move to the end of the line
+bindkey '\e[1;5D' backward-word       # Move cursor one word left with Ctrl + Left Arrow
+bindkey '\e[1;5C' forward-word        # Move cursor one word right with Ctrl + Right Arrow
+bindkey '^R' history-incremental-search-backward  # Interactive history search
+bindkey '^L' clear-screen             # Clear terminal screen
 
 # History
 HISTSIZE=5000
@@ -107,5 +113,3 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
