@@ -9,7 +9,7 @@ yay -S brave-bin extension-manager gdm-settings postman-bin wireshark-qt sticky-
 ### Install
 
 ```sh
-sudo pacman -S kitty zsh starship cheese obs-studio obsidian libreoffice-fresh shotcut flameshot btop neofetch bat eza fzf tldr zoxide tmux nmap mpv ducker pnpm nodejs rustup lazygit httpie procs speedtest-cli thefuck yazi neovim ttf-fira-code zed rate-mirrors pinta dconf-editor jdk-openjdk atuin
+sudo pacman -S kitty zsh starship cheese obs-studio obsidian libreoffice-fresh shotcut flameshot btop neofetch bat eza fzf tldr zoxide tmux nmap mpv ducker pnpm nodejs rustup lazygit httpie procs speedtest-cli thefuck yazi neovim ttf-fira-code zed rate-mirrors pinta dconf-editor jdk-openjdk atuin fastfetch
 ```
 
 ### Update the Mirror list
