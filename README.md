@@ -3,13 +3,13 @@
 ## Install The Packages
 
 ```sh
-yay -S brave-bin extension-manager gdm-settings postman-bin wireshark-qt sticky-notes nerdfetch visual-studio-code-bin zen-browser-avx2-bin banana-cursor-bin bun-bin google-chrome
+yay -S brave-bin extension-manager gdm-settings postman-bin wireshark-qt sticky-notes nerdfetch visual-studio-code-bin zen-browser-avx2-bin banana-cursor-bin bun-bin google-chrome yaak-bin mise-bin
 ```
 
 ### Install
 
 ```sh
-sudo pacman -S kitty zsh starship cheese obs-studio obsidian libreoffice-fresh shotcut flameshot btop neofetch bat eza fzf tldr zoxide tmux nmap mpv ducker pnpm nodejs rustup lazygit httpie procs speedtest-cli thefuck yazi neovim ttf-fira-code zed rate-mirrors pinta dconf-editor
+sudo pacman -S kitty zsh starship cheese obs-studio obsidian libreoffice-fresh shotcut flameshot btop neofetch bat eza fzf tldr zoxide tmux nmap mpv ducker pnpm nodejs rustup lazygit httpie procs speedtest-cli thefuck yazi neovim ttf-fira-code zed rate-mirrors pinta dconf-editor jdk-openjdk atuin
 ```
 
 ### Update the Mirror list
